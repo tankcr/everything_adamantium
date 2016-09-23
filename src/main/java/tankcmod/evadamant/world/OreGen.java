@@ -1,8 +1,7 @@
 package tankcmod.evadamant.world;
 
-import com.google.common.base.Predicate;
 import net.minecraft.block.Block;
-import net.minecraft.block.state.IBlockState;
+import net.minecraft.block.state.pattern.BlockStateMatcher;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -34,7 +33,8 @@ public class OreGen implements IWorldGenerator {
     public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVienSize, int maxVienSize, int chance, int minY, int maxY, Block generateIn) {
         int vienSize = minVienSize + random.nextInt(maxVienSize - minVienSize);
         int heightRange = maxY - minY;
-        WorldGenMinable gen = new WorldGenMinable((IBlockState) block, vienSize, (Predicate<IBlockState>) generateIn);
+        //block.getDefaultState();
+        WorldGenMinable gen = new WorldGenMinable(ModBlocks.admtOre.getDefaultState(), vienSize,BlockStateMatcher.forBlock(Blocks.DIAMOND_BLOCK));
         for(int i = 0; i < chance; i++) {
             int xRand = chunkX * 16 + random.nextInt(16);
             int yRand = random.nextInt(heightRange) + minY;

@@ -5,8 +5,10 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 import tankcmod.evadamant.proxy.CommonProxy;
+import tankcmod.evadamant.world.OreGen;
 
 /**
  * Created by KRoy.Local on 9/21/2016.
@@ -32,6 +34,7 @@ public class ModEvAdamant {
     public void preInit(FMLPreInitializationEvent event){
         logger = event.getModLog();
         proxy.preInit(event);
+        GameRegistry.registerWorldGenerator(new OreGen(), 0);
     }
 
     @Mod.EventHandler
