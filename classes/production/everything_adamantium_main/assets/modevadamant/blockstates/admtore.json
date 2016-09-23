@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "modevadamant:admtore"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}
