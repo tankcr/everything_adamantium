@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 import tankcmod.evadamant.proxy.CommonProxy;
+import tankcmod.evadamant.recipes.ADMTRecipes;
 import tankcmod.evadamant.world.OreGen;
 
 /**
@@ -40,6 +41,7 @@ public class ModEvAdamant {
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
         proxy.init(e);
+        ADMTRecipes.init();
     }
 
     @Mod.EventHandler

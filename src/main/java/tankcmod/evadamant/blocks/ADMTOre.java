@@ -16,16 +16,22 @@ import tankcmod.evadamant.ModEvAdamant;
  * Created by KRoy.Local on 9/21/2016.
  */
 public class ADMTOre extends Block {
+
+    public static int chance;
+    {chance = 200;}
+
     public ADMTOre() {
         super(Material.ROCK);
-        setHardness(3f);
+        setHardness(15f);
         setResistance(5f);
         setUnlocalizedName(ModEvAdamant.MODID + ".admtore");     // Used for localization (en_US.lang)
         setRegistryName("admtore");        // The unique name (within your mod) that identifies this block
+        setHarvestLevel("pickaxe",3);
         this.setCreativeTab(CreativeTabs.MISC);
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this), getRegistryName());
     }
+
     @SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
