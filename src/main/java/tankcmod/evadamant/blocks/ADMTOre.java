@@ -18,7 +18,7 @@ import tankcmod.evadamant.ModEvAdamant;
 public class ADMTOre extends Block {
 
     public static int chance;
-    {chance = 200;}
+    {chance = 600;}
 
     public ADMTOre() {
         super(Material.ROCK);

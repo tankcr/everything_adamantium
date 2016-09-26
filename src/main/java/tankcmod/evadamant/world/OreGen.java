@@ -28,7 +28,7 @@ public class OreGen implements IWorldGenerator {
     }
 
     public void generateOverworld(World world, Random rand, int x, int z) {
-        generateOre(ModBlocks.admtOre, world, rand, x, z, 2, 6, 4, 5, 68, Blocks.STONE);
+        generateOre(ModBlocks.admtOre, world, rand, x, z, 1, 10, 4, 1, 16, Blocks.STONE);
     }
 
     public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVienSize, int maxVienSize, int chance, int minY, int maxY, Block generateIn) {
