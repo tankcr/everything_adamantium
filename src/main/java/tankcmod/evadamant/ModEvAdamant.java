@@ -48,7 +48,4 @@ public class ModEvAdamant {
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit(e);
     }
-
-    //@Mod.EventHandler
-    //public void serverLoad(FMLServerStartingEvent event) {event.registerServerCommand(new TeleportCommand());}
 }

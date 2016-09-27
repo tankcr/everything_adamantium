@@ -1,5 +1,8 @@
 tile.modevadamant.admtblock.name=Adamantium Block
 tile.modevadamant.admtore.name=Adamantium Ore
 item.modevadamant.admtpowder.name=Adamantium Powder
-entity.modtut.WeirdZombie.name=Weird Zombie
-key.tutorial=Tutorial Key
+item.modevadamant.admtsack.name=Adamantium Powder Sack
+item.modevadamant.admtclaw.name=Adamantium Claw
+item.modevadamant.admtclaws.name=Adamantium Claws
+item.modevadamant.ironbracket.name=Iron Bracket
+item.modevadamant.admtingot.name=Adamantium Ingot
