@@ -1,7 +1,6 @@
 package tankcmod.evadamant.items;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.client.model.ModelLoader;
@@ -9,6 +8,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tankcmod.evadamant.ModEvAdamant;
+import tankcmod.evadamant.ModItems;
 
 /**
  * Created by KRoy.Local on 9/25/2016.
@@ -21,7 +21,7 @@ public class ADMTClaws extends ItemSword{
         super(material);
         setRegistryName("admtclaws");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName(ModEvAdamant.MODID + ".admtclaws");     // Used for localization (en_US.lang)
-        this.setCreativeTab(CreativeTabs.MISC);
+        this.setCreativeTab(ModItems.evtab);
         GameRegistry.register(this);
     }
 

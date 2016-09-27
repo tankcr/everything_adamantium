@@ -12,10 +12,11 @@ public class ModBlocks {
     public static ADMTBlock admtBlock;
     public static ADMTOre admtOre;
 
+
+
     public static void init() {
         admtOre = new ADMTOre();
         admtBlock = new ADMTBlock();
-        //bakedModelBlock = new BakedModelBlock();
     }
 
     @SideOnly(Side.CLIENT)

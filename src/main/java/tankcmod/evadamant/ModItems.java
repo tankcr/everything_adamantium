@@ -1,5 +1,6 @@
 package tankcmod.evadamant;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.relauncher.Side;
@@ -18,6 +19,14 @@ public class ModItems {
     public static ADMTClaws admtClaws;
     public static Item.ToolMaterial ADMTMAT = EnumHelper.addToolMaterial("everything_adamantium:adamantium", 2, 1561, 6.0F, 3.0F, 10);
     public static Item.ToolMaterial ADMTMATX3 = EnumHelper.addToolMaterial("everything_adamantium:adamantiumX3", 3, 3000, 12.0F, 12.0F, 34);
+
+    public static final CreativeTabs evtab = new CreativeTabs("EvAdmt") {
+        @Override
+        public Item getTabIconItem() {
+            return Item.getItemFromBlock(ModBlocks.admtBlock);
+        }
+    };
+
     public static void init()
     {
 
