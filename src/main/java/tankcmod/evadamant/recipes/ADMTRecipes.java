@@ -19,6 +19,7 @@ public class ADMTRecipes {
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.admtClaw, 1), new Object[] { " A ", " A ", " A ", 'A', ModItems.admtIngot});
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.ironBracket, 1), new Object[] { "   ", "III", "DDD", 'I', Items.IRON_INGOT, 'D', Items.DIAMOND});
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.admtClaws, 1), new Object[] { "   ", "CCC", " I ", 'C', ModItems.admtClaw, 'I', ModItems.ironBracket});
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.admtPick, 1), new Object[] { "III", " S ", " S ", 'I', ModItems.admtIngot, 'S', Items.STICK});
         GameRegistry.addSmelting(ModItems.admtSack, new ItemStack(ModItems.admtIngot), 0.9f);
     }
 }

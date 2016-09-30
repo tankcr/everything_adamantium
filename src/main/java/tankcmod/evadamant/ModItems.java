@@ -21,8 +21,9 @@ public class ModItems {
     public static IRONBracket ironBracket;
     public static ADMTClaw admtClaw;
     public static ADMTClaws admtClaws;
-    public static Item.ToolMaterial ADMTMAT = EnumHelper.addToolMaterial("everything_adamantium:adamantium", 2, 1561, 6.0F, 3.0F, 10);
-    public static Item.ToolMaterial ADMTMATX3 = EnumHelper.addToolMaterial("everything_adamantium:adamantiumX3", 3, 3000, 12.0F, 12.0F, 34);
+    public static ADMTPick admtPick;
+    public static Item.ToolMaterial ADMTMAT = EnumHelper.addToolMaterial("everything_adamantium:adamantium", 4, 1561, 6.0F, 3.0F, 10);
+    public static Item.ToolMaterial ADMTMATX3 = EnumHelper.addToolMaterial("everything_adamantium:adamantiumX3", 4, 3000, 12.0F, 12.0F, 34);
     private static Set effectiveAgainst = Sets.newHashSet(Blocks.PLANKS, Blocks.BOOKSHELF,
             Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN);
 
@@ -42,6 +43,7 @@ public class ModItems {
         ironBracket = new IRONBracket();
         admtClaw = new ADMTClaw("everything_adamantium:adamantium",ADMTMAT );
         admtClaws = new ADMTClaws("everything_adamantium:adamantiumX3",ADMTMATX3 );
+        admtPick = new ADMTPick("everything_adamantium:adamantium",ADMTMAT );
 
 
 
@@ -57,6 +59,7 @@ public class ModItems {
         ironBracket.initModel();
         admtClaw.initModel();
         admtClaws.initModel();
+        admtPick.initModel();
        //admtClaws.addInformation(ItemStack.copyItemStack(ADMTClaws);
 
     }

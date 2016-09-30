@@ -18,6 +18,9 @@ import tankcmod.evadamant.ModItems;
 public class ADMTBlock extends Block {
     public ADMTBlock() {
         super(Material.ROCK);
+        setHardness(50f);
+        setResistance(2000f);
+        setHarvestLevel("pickaxe",4);
         setUnlocalizedName(ModEvAdamant.MODID + ".admtblock");     // Used for localization (en_US.lang)
         setRegistryName("admtblock");        // The unique name (within your mod) that identifies this block
         this.setCreativeTab(ModItems.evtab);
