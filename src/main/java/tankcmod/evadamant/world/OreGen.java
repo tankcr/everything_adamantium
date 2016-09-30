@@ -10,7 +10,6 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
 import tankcmod.evadamant.ModBlocks;
-import tankcmod.evadamant.blocks.ADMTOre;
 
 import java.util.Random;
 
@@ -28,15 +27,15 @@ public class OreGen implements IWorldGenerator {
     }
 
     public void generateOverworld(World world, Random rand, int x, int z) {
-        generateOre(ModBlocks.admtOre, world, rand, x, z, 1, 10, 4, 1, 16, Blocks.STONE);
+        generateOre(ModBlocks.admtOre, world, rand, x, z, 1, 8, 5, 1, 16, Blocks.STONE);
     }
 
     public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVienSize, int maxVienSize, int chance, int minY, int maxY, Block generateIn) {
         int vienSize = minVienSize + random.nextInt(maxVienSize - minVienSize);
         int heightRange = maxY - minY;
         //block.getDefaultState();
-        WorldGenMinable gen = new WorldGenMinable(ModBlocks.admtOre.getDefaultState(), vienSize,BlockStateMatcher.forBlock(Blocks.STONE));
-        for(int i = 0; i < ADMTOre.chance; i++) {
+        WorldGenMinable gen = new WorldGenMinable(ModBlocks.admtOre.getDefaultState(), vienSize,BlockStateMatcher.forBlock(generateIn));
+        for(int i = 0; i < chance; i++) {
             int xRand = chunkX * 16 + random.nextInt(16);
             int yRand = random.nextInt(heightRange) + minY;
             int zRand = chunkZ * 16 + random.nextInt(16);

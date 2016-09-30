@@ -1,11 +1,15 @@
 package tankcmod.evadamant;
 
+import com.google.common.collect.Sets;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import tankcmod.evadamant.items.*;
+
+import java.util.Set;
 
 /**
  * Created by KRoy.Local on 9/21/2016.
@@ -26,6 +30,9 @@ public class ModItems {
             return Item.getItemFromBlock(ModBlocks.admtBlock);
         }
     };
+
+    private static Set effectiveAgainst = Sets.newHashSet(Blocks.PLANKS, Blocks.BOOKSHELF,
+            Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN);
 
     public static void init()
     {

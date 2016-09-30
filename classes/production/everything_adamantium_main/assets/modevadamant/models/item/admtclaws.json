@@ -4,15 +4,28 @@
     "layer0": "modevadamant:items/admtclaws"
   },
   "display": {
-    "thirdperson": {
-      "rotation": [ 0, 90, -35 ],
-      "translation": [ 0, 1.25, -3.5 ],
-      "scale": [ 0.85, 0.85, 0.85 ]
+    "_comment": "Rotation[rotation top to bot,#,#]",
+    "_comment": "Translation[distance from center lft to rt,position held front to back,position on arm top to bot]",
+    "_comment": "scale,height,thickness",
+    "thirdperson_righthand": {
+      "rotation": [ -218, 270, -90 ],
+      "translation": [ 1.25, -1.8, -1.65 ],
+      "scale": [ 0.5, 0.5, 0.9 ]
     },
-    "firstperson": {
-      "rotation": [ 0, -135, 25 ],
-      "translation": [ 0, 4, 2 ],
-      "scale": [ 1.7, 1.7, 1.7 ]
+    "thirdperson_lefthand": {
+      "rotation": [ -218, -270, 90 ],
+      "translation": [ 1.25, -1.8, -1.65 ],
+      "scale": [ 0.5, 0.5, 0.9 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ -45, -90, 25 ],
+      "translation": [ 0, 4, 2],
+      "scale": [ 0.5, 0.5, 0.5 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ -45, 90, -25 ],
+      "translation": [ 0, 4, 2],
+      "scale": [ 0.5, 0.5, 0.5 ]
     }
   }
 }
