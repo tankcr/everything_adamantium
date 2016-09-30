@@ -20,6 +20,7 @@ public class ADMTClaw extends ItemSword {
         super(material);
         setRegistryName("admtclaw");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName(ModEvAdamant.MODID + ".admtclaw");     // Used for localization (en_US.lang)
+        setMaxStackSize(3);
         this.setCreativeTab(ModItems.evtab);
         GameRegistry.register(this);
     }
