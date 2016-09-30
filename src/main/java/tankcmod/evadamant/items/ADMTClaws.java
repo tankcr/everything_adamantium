@@ -42,18 +42,18 @@ public class ADMTClaws extends ItemSword{
         return effectiveAgainst.contains(block) || super.canHarvestBlock(block.getDefaultState(),stack); // Check through the effective set if it can mine it
     }
 
-        //public float getStrVsBlock(ItemStack stack, IBlockState state)
-        //{
-        //    Material material = state.getMaterial();
-        //    return material != Material.WOOD && material != Material.PLANTS && material != Material.VINE ? super.getStrVsBlock(stack, state) : this.efficiencyOnProperMaterial;
-        //}
+    //public float getStrVsBlock(ItemStack stack, IBlockState state)
+    //{
+    //    Material material = state.getMaterial();
+    //    return material != Material.WOOD && material != Material.PLANTS && material != Material.VINE ? super.getStrVsBlock(stack, state) : this.efficiencyOnProperMaterial;
+    //}
 
-        //public float getStrVsBlock(stack, block) {
-        //    if (block.getMaterial() == Material.WOOD || block.getMaterial() == Material.VINE || block.getMaterial() == Material.PLANTS)
+    //public float getStrVsBlock(stack, block) {
+    //    if (block.getMaterial() == Material.WOOD || block.getMaterial() == Material.VINE || block.getMaterial() == Material.PLANTS)
 
-        //        return this.efficiencyOnProperMaterial; // Return the efficiency for that material with this tool
-        //    return effectiveAgainst.contains(block) ? this.efficiencyOnProperMaterial : super.func_150893_a(stack, block);
-        //}
+    //        return this.efficiencyOnProperMaterial; // Return the efficiency for that material with this tool
+    //    return effectiveAgainst.contains(block) ? this.efficiencyOnProperMaterial : super.func_150893_a(stack, block);
+    //}
     //}
 
 
@@ -61,4 +61,3 @@ public class ADMTClaws extends ItemSword{
     public void initModel(){
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(),"inventory"));}
 }
-
