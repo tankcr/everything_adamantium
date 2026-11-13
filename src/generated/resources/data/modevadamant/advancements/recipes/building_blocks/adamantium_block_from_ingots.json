@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_admt_ore": {
+    "has_admt_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "modevadamant:adamantium_ore"
+              "modevadamant:adamantium_ingot"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:adamantium_ingot_from_smelting"
+        "recipe": "modevadamant:adamantium_block_from_ingots"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_admt_ore",
+      "has_admt_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:adamantium_ingot_from_smelting"
+      "modevadamant:adamantium_block_from_ingots"
     ]
   },
   "sends_telemetry_event": false

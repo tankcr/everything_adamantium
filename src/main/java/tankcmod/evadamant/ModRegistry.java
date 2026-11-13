@@ -2,7 +2,10 @@ package tankcmod.evadamant;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -36,12 +39,30 @@ public class ModRegistry {
     public static final RegistryObject<Item> IRON_BRACKET = ITEMS.register("iron_bracket", () -> new Item(new Item.Properties()));
 
     // ================= TOOLS & WEAPONS =================
-    // Attack damage modifier is added to the base Tier damage. Speed is a negative offset from base 4.0.
     public static final RegistryObject<Item> ADMT_PICK = ITEMS.register("adamantium_pickaxe",
-            () -> new PickaxeItem(ModTiers.ADAMANTIUM, 1, -2.8F, new Item.Properties()));
+            () -> new PickaxeItem(ModTiers.ADAMANTIUM, 1, -2.8F, new Item.Properties()) {
+                @Override public void onCraftedBy(ItemStack s, Level l, Player p) { s.enchant(Enchantments.UNBREAKING, 3); }
+            });
+
+    public static final RegistryObject<Item> ADMT_SHOVEL = ITEMS.register("adamantium_shovel",
+            () -> new ShovelItem(ModTiers.ADAMANTIUM, 1.5F, -3.0F, new Item.Properties()) {
+                @Override public void onCraftedBy(ItemStack s, Level l, Player p) { s.enchant(Enchantments.UNBREAKING, 3); }
+            });
+
+    public static final RegistryObject<Item> ADMT_AXE = ITEMS.register("adamantium_axe",
+            () -> new AxeItem(ModTiers.ADAMANTIUM, 5.0F, -3.0F, new Item.Properties()) {
+                @Override public void onCraftedBy(ItemStack s, Level l, Player p) { s.enchant(Enchantments.UNBREAKING, 3); }
+            });
+
+    public static final RegistryObject<Item> ADMT_HOE = ITEMS.register("adamantium_hoe",
+            () -> new HoeItem(ModTiers.ADAMANTIUM, -3, 0.0F, new Item.Properties()) {
+                @Override public void onCraftedBy(ItemStack s, Level l, Player p) { s.enchant(Enchantments.UNBREAKING, 3); }
+            });
 
     public static final RegistryObject<Item> ADMT_CLAW = ITEMS.register("adamantium_claw",
-            () -> new SwordItem(ModTiers.ADAMANTIUM, 3, -2.4F, new Item.Properties()));
+            () -> new SwordItem(ModTiers.ADAMANTIUM, 3, -2.4F, new Item.Properties()) {
+                @Override public void onCraftedBy(ItemStack s, Level l, Player p) { s.enchant(Enchantments.UNBREAKING, 3); }
+            });
 
     public static final RegistryObject<Item> ADMT_CLAWS = ITEMS.register("adamantium_claws",
             () -> new AdamantiumClawsItem(ModTiers.ADAMANTIUM_X3, 8, -2.0F, new Item.Properties()));
@@ -58,10 +79,22 @@ public class ModRegistry {
                         output.accept(ADMT_SACK.get());
                         output.accept(ADMT_INGOT.get());
                         output.accept(IRON_BRACKET.get());
-                        output.accept(ADMT_PICK.get());
-                        output.accept(ADMT_CLAW.get());
-                        output.accept(ADMT_CLAWS.get());
+
+                        // Push pre-enchanted instances to the Creative Menu
+                        output.accept(enchant(ADMT_PICK.get()));
+                        output.accept(enchant(ADMT_SHOVEL.get()));
+                        output.accept(enchant(ADMT_AXE.get()));
+                        output.accept(enchant(ADMT_HOE.get()));
+                        output.accept(enchant(ADMT_CLAW.get()));
+                        output.accept(enchant(ADMT_CLAWS.get()));
                     }).build());
+
+    // Helper method to apply enchantments before adding to the Creative Tab
+    private static ItemStack enchant(Item item) {
+        ItemStack stack = new ItemStack(item);
+        stack.enchant(Enchantments.UNBREAKING, 3);
+        return stack;
+    }
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

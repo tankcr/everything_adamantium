@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_admt_sack": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "modevadamant:adamantium_sack"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "modevadamant:adamantium_ingot_from_blasting_sack"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_admt_sack",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "modevadamant:adamantium_ingot_from_blasting_sack"
+    ]
+  },
+  "sends_telemetry_event": false
+}

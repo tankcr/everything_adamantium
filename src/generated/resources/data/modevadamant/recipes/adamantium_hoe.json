@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "modevadamant:adamantium_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AA ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "modevadamant:adamantium_hoe"
+  },
+  "show_notification": true
+}

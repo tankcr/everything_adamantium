@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "modevadamant:adamantium_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "modevadamant:adamantium_shovel"
+  },
+  "show_notification": true
+}

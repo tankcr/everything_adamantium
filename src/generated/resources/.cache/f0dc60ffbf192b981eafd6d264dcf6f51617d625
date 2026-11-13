@@ -1,0 +1,5 @@
+// 1.20.1	2026-11-13T13:06:10.0117685	Tags for minecraft:block mod id modevadamant
+124bb4298f492e1f6cbda90c67669200c4a94408 data/forge/tags/blocks/ores.json
+1000bd5627ccc5d641f19c1f0c92727644505eae data/forge/tags/blocks/storage_blocks.json
+741eeb93d8969c5f07edac2acabe4f1035f3eabc data/minecraft/tags/blocks/mineable/pickaxe.json
+741eeb93d8969c5f07edac2acabe4f1035f3eabc data/minecraft/tags/blocks/needs_diamond_tool.json

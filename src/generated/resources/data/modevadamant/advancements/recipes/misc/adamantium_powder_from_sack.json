@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_admt_ingot": {
+    "has_admt_sack": {
       "conditions": {
         "items": [
           {
             "items": [
-              "modevadamant:adamantium_ingot"
+              "modevadamant:adamantium_sack"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "modevadamant:adamantium_block"
+        "recipe": "modevadamant:adamantium_powder_from_sack"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_admt_ingot",
+      "has_admt_sack",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "modevadamant:adamantium_block"
+      "modevadamant:adamantium_powder_from_sack"
     ]
   },
   "sends_telemetry_event": false

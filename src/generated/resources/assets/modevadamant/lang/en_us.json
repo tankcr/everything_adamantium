@@ -1,0 +1,16 @@
+{
+  "block.modevadamant.adamantium_block": "Adamantium Block",
+  "block.modevadamant.adamantium_ore": "Adamantium Ore",
+  "item.modevadamant.adamantium_axe": "Adamantium Axe",
+  "item.modevadamant.adamantium_claw": "Adamantium Claw",
+  "item.modevadamant.adamantium_claws": "Adamantium Claws",
+  "item.modevadamant.adamantium_hoe": "Adamantium Hoe",
+  "item.modevadamant.adamantium_ingot": "Adamantium Ingot",
+  "item.modevadamant.adamantium_pickaxe": "Adamantium Pickaxe",
+  "item.modevadamant.adamantium_powder": "Adamantium Powder",
+  "item.modevadamant.adamantium_sack": "Adamantium Sack",
+  "item.modevadamant.adamantium_shovel": "Adamantium Shovel",
+  "item.modevadamant.iron_bracket": "Iron Bracket",
+  "itemGroup.evadmt": "Everything Adamantium",
+  "tooltip.modevadamant.claws_info": "Forged from pure Adamantium. Triple-bladed lethality."
+}

@@ -27,6 +27,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModRegistry.ADMT_PICK);
         handheldItem(ModRegistry.ADMT_CLAW);
         handheldItem(ModRegistry.ADMT_CLAWS);
+        handheldItem(ModRegistry.ADMT_SHOVEL);
+        handheldItem(ModRegistry.ADMT_AXE);
+        handheldItem(ModRegistry.ADMT_HOE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
