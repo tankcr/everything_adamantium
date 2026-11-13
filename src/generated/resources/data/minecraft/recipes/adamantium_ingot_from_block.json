@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "modevadamant:adamantium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "modevadamant:adamantium_ingot"
+  }
+}

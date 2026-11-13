@@ -20,10 +20,8 @@ public class ModEvAdamant {
     public ModEvAdamant() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register DeferredRegisters for Blocks, Items, and Creative Tabs
-        ModBlocks.BLOCKS.register(modEventBus);
-        ModItems.ITEMS.register(modEventBus);
-        ModItems.CREATIVE_TABS.register(modEventBus);
+        // Safe, unified registry initialization
+        ModRegistry.register(modEventBus);
 
         // Register lifecycle listeners
         modEventBus.addListener(this::commonSetup);

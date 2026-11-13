@@ -1,0 +1,7 @@
+// 1.20.1	2026-11-13T12:31:29.7648372	Recipes
+17f3bc894dce0f0bf27285398e9e80a5a5d69890 data/minecraft/advancements/recipes/misc/adamantium_ingot_from_block.json
+1c83fc099ddb1c2fbdb958b6f031a5a53cea271b data/minecraft/advancements/recipes/misc/adamantium_ingot_from_smelting.json
+cee77765faa216a38e3f9b5395ecd26c25254227 data/minecraft/recipes/adamantium_ingot_from_block.json
+1d1756cc48f845f1f9d70d13c958fbfdc02bcdd7 data/minecraft/recipes/adamantium_ingot_from_smelting.json
+c3de69f476523b4a065286f714f7fa0d6ef2f36c data/modevadamant/advancements/recipes/building_blocks/adamantium_block.json
+64dbe8f041662000717192628e96751eacd0abd5 data/modevadamant/recipes/adamantium_block.json
